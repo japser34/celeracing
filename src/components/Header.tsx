@@ -1,16 +1,24 @@
+"use client";
 import React from "react";
 import Image from "next/image";
+import { useScrollDirection } from "../app/hooks/useScrollDirection";
 
 const Header = () => {
+  const scrollDirection = useScrollDirection();
+
   return (
-    <header className="header">
+    <header
+      className={`header ${scrollDirection === "down" ? "header--hidden" : "header--visible"}`}
+    >
       <div className="flex items-center gap-2">
-        <Image
-          src="/logo-wide.png"
-          alt="Celeracing Logo"
-          width={160}
-          height={80}
-        />
+        <a href="/" className="cursor-pointer">
+          <Image
+            src="/logo-wide.png"
+            alt="Celeracing Logo"
+            width={160}
+            height={50}
+          />
+        </a>
       </div>
       <nav>
         <a href="/" className="mr-4">

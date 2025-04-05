@@ -1,17 +1,45 @@
 @import "tailwindcss";
 
 :root {
-    --header-background-color: #a0a0a0;
     --background-color: #d0d0d0;
+    --header-background-color: #a0a0a0;
+    --footer-background-color: #202020;
 }
 
 .header {
+    --header-height: 4rem;
     background-color: var(--header-background-color);
     padding: 10px 20px;
     color: #202020;
     display: flex;
     justify-content: space-between;
+
     align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    height: var(--header-height);
+    transition: top 0.2s linear;
+}
+
+.header--hidden {
+    top: calc(-1 * var(--header-height));
+}
+
+.header--visible {
+    top: 0;
+}
+
+.footer {
+    height: 250px;
+    background-color: var(--footer-background-color);
+    padding: 5rem;
+    color: #a0a0a0;
+
+    display: flex;
+    align-items: center;
+
+    text-align: right;
 }
 
 body {

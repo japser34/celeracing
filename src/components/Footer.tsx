@@ -1,12 +1,12 @@
 import React from "react";
-//import Image from "next/image";
+import Image from "next/image";
 
 const Footer = () => {
   return (
-    <footer
-      className="footer"
-      style={{ height: "100px", backgroundColor: "black" }}
-    ></footer>
+    <footer className="footer">
+      <Image src="/logo-wide-mono.png" alt="Logo" width={500} height={100} />
+      <div> Hoi </div>
+    </footer>
   );
 };
 
