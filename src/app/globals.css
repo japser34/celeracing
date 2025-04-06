@@ -31,16 +31,12 @@
 }
 
 .footer {
-    height: 250px;
     background-color: var(--footer-background-color);
     padding: 5rem;
-    margin: 20 20;
     color: #a0a0a0;
 
     display: flex;
     align-items: center;
-
-    text-align: right;
 }
 
 body {
