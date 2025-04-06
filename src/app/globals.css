@@ -2,12 +2,13 @@
 
 :root {
     --background-color: #d0d0d0;
-    --header-background-color: #a0a0a0;
+    --header-background-color: #a0a0a060;
     --footer-background-color: #202020;
 }
 
 .header {
     --header-height: 4rem;
+    backdrop-filter: blur(10px);
     background-color: var(--header-background-color);
     padding: 10px 20px;
     color: #202020;
