@@ -1,5 +1,49 @@
 import Image from "next/image";
+import Link from "next/link";
 import styles from "../styles/Home.module.css";
+
+type Vehicle = {
+  title: string;
+  description: string;
+  image: string;
+};
+
+const vehicles: Vehicle[] = [
+  {
+    title: "Orka",
+    description: "This is the first car we made, in ...",
+    image: "/vehicles/orka.png",
+  },
+  {
+    title: "Road Thunder",
+    description: "This car was made after the Orka in ...",
+    image: "/vehicles/road-thunder.png",
+  },
+  {
+    title: "New Car",
+    description:
+      "We hope we will finish this car before the Shell Eco-marathon in 2025.",
+    image: "/vehicles/new-car.png",
+  },
+];
+
+// Utility function to convert title to slug
+function slugify(title: string): string {
+  return title.toLowerCase().replace(/\s+/g, "-");
+}
+
+function VehicleCard({ title, description, image }: Vehicle) {
+  const slug = slugify(title);
+  return (
+    <Link href={`/vehicles/${slug}`} className={styles.vehicleCard}>
+      <div className={styles.vehicleImage}>
+        <Image src={image} alt={title} fill style={{ objectFit: "cover" }} />
+      </div>
+      <h3>{title}</h3>
+      <p>{description}</p>
+    </Link>
+  );
+}
 
 export default function Home() {
   return (
@@ -14,23 +58,41 @@ export default function Home() {
         />
       </div>
 
-      {/* Intro Section: full screen with centered text */}
-      <section className={styles.intro}>
+      {/* Home section */}
+      <section className={styles.home}>
         <h1>Celeracing</h1>
       </section>
 
-      {/* Additional Content: appears when scrolling */}
-      <section className={styles.content}>
-        <h2>Placeholder Title</h2>
+      {/* Intro Section */}
+      <section className={styles.introdark}>
+        <h2>Welcome to Celeracing</h2>
+        <p>Welcome to the official website of Celeracing.</p>
+        <h3>Who are we?</h3>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sit
-          amet accumsan tortor. Donec ullamcorper, urna in cursus placerat, orci
-          lorem maximus risus, non facilisis lacus odio in massa.
+          We are a dutch secondary school team that makes a 1 person racing car
+          for the{" "}
+          <a
+            href="https://www.shellecomarathon.com/"
+            className="hover:underline"
+          >
+            Shell Eco-marathon
+          </a>
+          . Most of the team is made up of students from{" "}
+          <a href="https://www.celeanum.nl/" className="hover:underline">
+            Gymnasium Celeanum
+          </a>
+          .
         </p>
-        <p>
-          More placeholder text here. Add any info you want to display once the
-          user scrolls down.
-        </p>
+      </section>
+
+      {/* Vehicles Section */}
+      <section className={`${styles.introlight} text-center`}>
+        <h2>Our Vehicles</h2>
+        <div className={styles.vehicleContainer}>
+          {vehicles.map((vehicle, index) => (
+            <VehicleCard key={index} {...vehicle} />
+          ))}
+        </div>
       </section>
     </>
   );

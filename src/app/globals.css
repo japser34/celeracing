@@ -12,6 +12,7 @@
     background-color: var(--header-background-color);
     padding: 10px 20px;
     color: #202020;
+    font-weight: bold;
     display: flex;
     justify-content: space-between;
 

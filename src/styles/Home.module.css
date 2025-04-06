@@ -18,7 +18,7 @@
     object-fit: cover;
 }
 
-.intro {
+.home {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -28,24 +28,87 @@
     font-family: var(--font-family);
 }
 
-.intro h1 {
+.home h1 {
     font-size: 5rem;
 }
 
-.content {
+.introdark {
+    background-color: #232426;
+    color: #fff;
     padding: 2rem;
-    background-color: #f5f5f5;
-    min-height: 100vh;
     font-family: var(--font-family);
 }
 
-.content h2 {
+.introdark h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
 }
 
-.content p {
+.introdark h3 {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.introdark p {
     font-size: 1rem;
-    line-height: 1.6;
     margin-bottom: 1rem;
+}
+
+.introlight {
+    background-color: #eeeeee;
+    color: #333;
+    padding: 2rem;
+    font-family: var(--font-family);
+}
+
+.introlight h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* Vehicles container and card styles */
+.vehicleContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+/* Card styled as a button */
+.vehicleCard {
+    display: block;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 300px;
+    text-align: center;
+    font-family: var(--font-family);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+}
+
+.vehicleCard:hover {
+    transform: scale(1.03);
+}
+
+.vehicleImage {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    margin-bottom: 1rem;
+}
+
+.vehicleCard h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.vehicleCard p {
+    font-size: 1rem;
+    margin: 0;
 }
