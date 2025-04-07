@@ -149,8 +149,23 @@ export const team = [
 // Partner Data
 export const partners = [
   {
-    name: "Example Sponsor",
-    logo: "/sponsors/example-colour.png",
-    website: "https://example.com",
+    name: "Easy Composites",
+    logo: "/sponsors/easycomposites.png",
+    website: "https://www.easycomposites.co.uk/",
+  },
+  {
+    name: "Bafang",
+    logo: "/sponsors/bafang.png",
+    website: "https://www.bafang-e.com/",
+  },
+  {
+    name: "Unive",
+    logo: "/sponsors/unive.png",
+    website: "https://www.unive.nl/",
+  },
+  {
+    name: "Gymnasium Celeanum",
+    logo: "/sponsors/celeanum.png",
+    website: "https://www.celeanum.nl/",
   },
 ];
