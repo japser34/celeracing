@@ -71,16 +71,16 @@ export default function Home() {
         <p>
           We are a dutch secondary school team that makes a 1 person racing car
           for the{" "}
-          <a
+          <Link
             href="https://www.shellecomarathon.com/"
             className="hover:underline"
           >
             Shell Eco-marathon
-          </a>
+          </Link>
           . Most of the team is made up of students from{" "}
-          <a href="https://www.celeanum.nl/" className="hover:underline">
+          <Link href="https://www.celeanum.nl/" className="hover:underline">
             Gymnasium Celeanum
-          </a>
+          </Link>
           .
         </p>
       </section>
