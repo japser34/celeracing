@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import styles from "../styles/Home.module.css";
 import VehicleCard from "../components/VehicleCard";
 import TeamCard from "../components/TeamCard";
@@ -19,7 +20,7 @@ export default function Home() {
       </div>
 
       <section className={styles.home}>
-        <h1>xeleracing</h1>
+        <h1>Celeracing</h1>
       </section>
 
       <section className={styles.introdark}>

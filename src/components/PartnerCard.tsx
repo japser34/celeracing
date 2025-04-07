@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import styles from "../styles/Home.module.css";
 
 export default function PartnerCard({
@@ -11,7 +12,7 @@ export default function PartnerCard({
   website: string;
 }) {
   return (
-    <a
+    <Link
       href={website}
       target="_blank"
       rel="noopener noreferrer"
@@ -24,6 +25,6 @@ export default function PartnerCard({
         height={100}
         className={styles.partnerLogo}
       />
-    </a>
+    </Link>
   );
 }
