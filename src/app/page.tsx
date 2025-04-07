@@ -20,7 +20,7 @@ export default function Home() {
       </div>
 
       <section className={styles.home}>
-        <h1>Celeracing</h1>
+        <h1>Xelereesing</h1>
       </section>
 
       <section className={styles.introdark}>
