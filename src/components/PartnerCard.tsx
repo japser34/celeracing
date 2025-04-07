@@ -23,7 +23,7 @@ export default function PartnerCard({
       className={styles.partnerCard}
     >
       <Image
-        src={`sponsors/${logo}`}
+        src={`/sponsors/${logo}`}
         alt={name}
         width={200}
         height={100}

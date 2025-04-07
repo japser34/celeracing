@@ -2,18 +2,18 @@
 export const vehicles = [
   {
     title: "Orka",
-    description: "This is the first car we made, in ....",
+    description: "Dit was de eerste auto die we gemaakt hebben, in ....",
     image: "/vehicles/orka.png",
   },
   {
     title: "Road Thunder",
-    description: "This car was made after the Orka in ....",
+    description: "Deze auto is gebouwd na de Orka in ....",
     image: "/vehicles/road-thunder.png",
   },
   {
     title: "New Car",
     description:
-      "We hope we will finish this car before the Shell Eco-marathon in 2025.",
+      "We werken nu aan deze auto, we hopen de auto voor SEM 2025 af te hebben.",
     image: "/vehicles/new-car.png",
   },
 ];

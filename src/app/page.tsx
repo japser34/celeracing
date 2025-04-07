@@ -24,19 +24,19 @@ export default function Home() {
       </section>
 
       <section className={styles.introdark}>
-        <h2>Welcome to Celeracing</h2>
-        <p>Welcome to the official website of Celeracing.</p>
-        <h3>Who are we?</h3>
+        <h2>Welkom bij Celeracing</h2>
+        <p>Welkom bij de website van Celeracing.</p>
+        <h3>Wie zijn we?</h3>
         <p>
-          We are a Dutch secondary school team that makes a 1-person racing car
-          for the{" "}
+          We zijn een Nederlandse middelbare school team dat een 1-persoons race
+          wagen maakt voor de{" "}
           <Link
             href="https://www.shellecomarathon.com/"
             className="hover:underline"
           >
             Shell Eco-marathon
           </Link>
-          . Most of the team is made up of students from{" "}
+          . Het team bestaat uit studenten van{" "}
           <Link href="https://www.celeanum.nl/" className="hover:underline">
             Gymnasium Celeanum
           </Link>
@@ -44,8 +44,8 @@ export default function Home() {
         </p>
       </section>
 
-      <section className={styles.introlight} text-center>
-        <h2>Our Vehicles</h2>
+      <section className={styles.introlight}>
+        <h2>Onze Voertuigen</h2>
         <div className={styles.vehicleContainer}>
           {vehicles.map((vehicle, index) => (
             <VehicleCard key={index} {...vehicle} />
@@ -54,7 +54,7 @@ export default function Home() {
       </section>
 
       <section className={styles.introdark}>
-        <h2>Our Team</h2>
+        <h2>Ons Team</h2>
         <div className={styles.teamContainer}>
           {team.map((member, index) => (
             <TeamCard key={index} {...member} />
@@ -63,7 +63,7 @@ export default function Home() {
       </section>
 
       <section className={styles.introlight}>
-        <h2>Our Sponsors</h2>
+        <h2>Onze Sponsors</h2>
         <div className={styles.partnerContainer}>
           {partners.map((partner, index) => (
             <PartnerCard key={index} {...partner} />
