@@ -11,31 +11,31 @@ const Header = () => {
       className={`header ${scrollDirection === "down" ? "header--hidden" : "header--visible"}`}
     >
       <div className="flex items-center gap-2">
-        <a href="/" className="cursor-pointer">
+        <Link href="/" className="cursor-pointer">
           <Image
             src="/logo-wide.png"
             alt="Celeracing Logo"
             width={160}
             height={50}
           />
-        </a>
+        </Link>
       </div>
       <nav>
-        <a href="/" className="mr-4">
+        <Link href="/" className="mr-4">
           Home
-        </a>
-        <a href="/about" className="mr-4">
+        </Link>
+        <Link href="/about" className="mr-4">
           About
-        </a>
-        <a href="/contact" className="mr-4">
+        </Link>
+        <Link href="/contact" className="mr-4">
           Contact
-        </a>
-        <a href="/blog" className="mr-4">
+        </Link>
+        <Link href="/blog" className="mr-4">
           Blog
-        </a>
-        <a href="/sponsors" className="mr-4">
+        </Link>
+        <Link href="/sponsors" className="mr-4">
           Sponsors
-        </a>
+        </Link>
       </nav>
     </header>
   );
