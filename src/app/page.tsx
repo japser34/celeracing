@@ -60,7 +60,7 @@ export default function Home() {
 
       {/* Home section */}
       <section className={styles.home}>
-        <h1>Celeracing</h1>
+        <h1>xeleracing</h1>
       </section>
 
       {/* Intro Section */}
