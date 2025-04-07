@@ -23,8 +23,8 @@ const Footer: React.FC = () => {
     },
     {
       label: "Phone",
-      link: "tel:+31 06 12345678",
-      value: "+31 06 12345678",
+      link: "tel:+31 06 87276870",
+      value: "+31 06 87276870",
     },
     {
       label: "Address",

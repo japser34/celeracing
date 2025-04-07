@@ -6,10 +6,14 @@ export default function PartnerCard({
   name,
   logo,
   website,
+  slogan,
+  description,
 }: {
   name: string;
   logo: string;
   website: string;
+  slogan: string;
+  description: string;
 }) {
   return (
     <Link
@@ -19,7 +23,7 @@ export default function PartnerCard({
       className={styles.partnerCard}
     >
       <Image
-        src={logo}
+        src={`sponsors/${logo}`}
         alt={name}
         width={200}
         height={100}
