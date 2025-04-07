@@ -1,9 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
 
-:root {
-    --font-family: "Montserrat", sans-serif;
-}
-
 .background {
     position: fixed;
     top: 0;
@@ -25,7 +21,7 @@
     height: 100vh;
     color: #fff;
     text-align: center;
-    font-family: var(--font-family);
+    font-family: "Montserrat", sans-serif;
 }
 
 .home h1 {
@@ -36,7 +32,7 @@
     background-color: #232426;
     color: #fff;
     padding: 2rem;
-    font-family: var(--font-family);
+    font-family: "Montserrat", sans-serif;
 }
 
 .introdark h2 {

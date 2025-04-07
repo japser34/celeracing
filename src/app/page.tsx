@@ -19,7 +19,7 @@ export default function Home() {
       </div>
 
       <section className={styles.home}>
-        <h1>Celeracing</h1>
+        <h1>xeleracing</h1>
       </section>
 
       <section className={styles.introdark}>
@@ -29,16 +29,16 @@ export default function Home() {
         <p>
           We are a Dutch secondary school team that makes a 1-person racing car
           for the{" "}
-          <a
+          <Link
             href="https://www.shellecomarathon.com/"
             className="hover:underline"
           >
             Shell Eco-marathon
-          </a>
+          </Link>
           . Most of the team is made up of students from{" "}
-          <a href="https://www.celeanum.nl/" className="hover:underline">
+          <Link href="https://www.celeanum.nl/" className="hover:underline">
             Gymnasium Celeanum
-          </a>
+          </Link>
           .
         </p>
       </section>
