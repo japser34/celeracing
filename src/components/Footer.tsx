@@ -69,9 +69,9 @@ const Footer: React.FC = () => {
           {contactItems.map((item, index) => (
             <p key={index}>
               <strong>{item.label}:</strong>{" "}
-              <a href={item.link} className="hover:underline">
+              <Link href={item.link} className="hover:underline">
                 {item.value}
-              </a>
+              </Link>
             </p>
           ))}
         </FooterSection>
@@ -80,9 +80,9 @@ const Footer: React.FC = () => {
         <FooterSection title="Follow Us">
           {socialLinks.map((social, index) => (
             <p key={index}>
-              <a href={social.href} className="hover:underline">
+              <Link href={social.href} className="hover:underline">
                 {social.name}
-              </a>
+              </Link>
             </p>
           ))}
         </FooterSection>
