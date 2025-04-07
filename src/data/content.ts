@@ -168,4 +168,39 @@ export const partners = [
     logo: "/sponsors/celeanum.png",
     website: "https://www.celeanum.nl/",
   },
+  {
+    name: "Traffic Supply",
+    logo: "/sponsors/trafficsupply.png",
+    website: "https://www.trafficsupply.nl/",
+  },
+  {
+    name: "Battery Labs",
+    logo: "/sponsors/batterylabs.png",
+    website: "https://batterylabs.nl/",
+  },
+  {
+    name: "Exsin",
+    logo: "/sponsors/exsin.png",
+    website: "https://www.exsin.nl/",
+  },
+  {
+    name: "Hervormd Weeshuis Zwolle",
+    logo: "/sponsors/hervormdweeshuiszwolle.png",
+    website: "https://www.hervormdweeshuiszwolle.nl/",
+  },
+  {
+    name: "Hanzestrohm",
+    logo: "/sponsors/hanzestrohm.png",
+    website: "https://hanzestrohm.nl/",
+  },
+  {
+    name: "Autohopper",
+    logo: "/sponsors/autohopper.png",
+    website: "https://www.autohopper.nl/",
+  },
+  {
+    name: "RPP Kunststofoplossingen",
+    logo: "/sponsors/rppkunststofoplossingen.png",
+    website: "https://rppkunststofoplossingen.nl/",
+  },
 ];
