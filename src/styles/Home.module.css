@@ -22,10 +22,7 @@
     color: #fff;
     text-align: center;
     font-family: "Montserrat", sans-serif;
-}
-
-.home h1 {
-    font-size: 5rem;
+    font-size: clamp(12px, 15vw, 5rem);
 }
 
 .introdark {
