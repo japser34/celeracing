@@ -6,14 +6,14 @@ export default function PartnerCard({
   name,
   logo,
   website,
-  slogan,
-  description,
+  //slogan,
+  //description,
 }: {
   name: string;
   logo: string;
   website: string;
-  slogan: string;
-  description: string;
+  //slogan: string;
+  //description: string;
 }) {
   return (
     <Link
