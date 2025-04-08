@@ -58,7 +58,7 @@ export const team = [
     team: "Kap/Frame",
   },
   {
-    name: "kato",
+    name: "Kato",
     team: "Kap/Frame",
   },
   {
