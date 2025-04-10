@@ -21,14 +21,14 @@ export default function PartnerCard({
       href={website}
       target="_blank"
       rel="noopener noreferrer"
-      className="partner-card"
+      className="card partner"
     >
       <Image
         src={`/sponsors/${logo}`}
         alt={name}
         width={200}
         height={100}
-        className="partner-logo"
+        className="card-image partner"
       />
     </Link>
   );

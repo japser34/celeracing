@@ -1,7 +1,6 @@
 @import "tailwindcss";
 
 @import "./components/section.css";
-@import "./components/partner.css";
 @import "./components/header.css";
 @import "./components/footer.css";
 @import "./components/card.css";
@@ -15,6 +14,8 @@
     --text-dark: rgb(64, 64, 64);
     --text-card-light: rgb(255, 255, 255);
     --text-card-dark: rgb(16, 16, 16);
+
+    --border-radius: 8px;
 
     --header-height: 4rem;
 }

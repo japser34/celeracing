@@ -150,7 +150,7 @@ export const team = [
 export const partners = [
   {
     name: "Easy Composites",
-    logo: "/sponsors/easycomposites.png",
+    logo: "/easycomposites.png",
     website: "https://www.easycomposites.co.uk/",
     slogan: "",
     description: "",
@@ -221,6 +221,27 @@ export const partners = [
   {
     name: "RPP Kunststofoplossingen",
     logo: "/rppkunststofoplossingen.png",
+    website: "https://rppkunststofoplossingen.nl/",
+    slogan: "",
+    description: "",
+  },
+  {
+    name: "Hanzestrohm2",
+    logo: "../background.png",
+    website: "https://hanzestrohm.nl/",
+    slogan: "",
+    description: "",
+  },
+  {
+    name: "Autohopper2",
+    logo: "../logo-wide.png",
+    website: "https://www.autohopper.nl/",
+    slogan: "",
+    description: "",
+  },
+  {
+    name: "RPP Kunststofoplossingen2",
+    logo: "../logo-wide-mono.png",
     website: "https://rppkunststofoplossingen.nl/",
     slogan: "",
     description: "",
