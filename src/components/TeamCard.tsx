@@ -1,6 +1,5 @@
 "use client";
 import Image from "next/image";
-import styles from "../styles/Home.module.css";
 import { useState } from "react";
 
 function slugify(title: string): string {
@@ -20,13 +19,13 @@ export default function TeamCard({
     setImageSrc("/team/empty.png"); // Fallback image
   };
   return (
-    <div className={styles.teamCard}>
+    <div className="card team">
       <Image
         src={imageSrc}
         alt={name}
         width={150}
         height={150}
-        className={styles.teamImage}
+        className="card-image team"
         onError={handleError} // Handle error event
       />
       <h3>{name}</h3>

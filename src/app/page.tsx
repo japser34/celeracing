@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import styles from "../styles/Home.module.css";
 import VehicleCard from "../components/VehicleCard";
 import TeamCard from "../components/TeamCard";
 import PartnerCard from "../components/PartnerCard";
@@ -10,20 +9,20 @@ export default function Home() {
   return (
     <div>
       {/* Fixed background image */}
-      <div className={styles.background}>
+      <div className="start-background">
         <Image
           src="/background.png"
           alt="Background"
           fill
-          className={styles.bgImage}
+          className="object-cover"
         />
       </div>
 
-      <section className={styles.home}>
+      <section className="start-text">
         <h1>Xelereesing</h1>
       </section>
 
-      <section className={styles.introdark}>
+      <section className="section dark">
         <h2>Welkom bij Celeracing</h2>
         <p>Welkom bij de website van Celeracing.</p>
         <h3>Wie zijn we?</h3>
@@ -44,27 +43,27 @@ export default function Home() {
         </p>
       </section>
 
-      <section className={styles.introlight}>
+      <section className="section light">
         <h2>Onze Voertuigen</h2>
-        <div className={styles.vehicleContainer}>
+        <div className="card-container">
           {vehicles.map((vehicle, index) => (
             <VehicleCard key={index} {...vehicle} />
           ))}
         </div>
       </section>
 
-      <section className={styles.introdark}>
+      <section className="section dark">
         <h2>Ons Team</h2>
-        <div className={styles.teamContainer}>
+        <div className="card-container">
           {team.map((member, index) => (
             <TeamCard key={index} {...member} />
           ))}
         </div>
       </section>
 
-      <section className={styles.introlight}>
+      <section className="section light">
         <h2>Onze Sponsors</h2>
-        <div className={styles.partnerContainer}>
+        <div className="card-container">
           {partners.map((partner, index) => (
             <PartnerCard key={index} {...partner} />
           ))}

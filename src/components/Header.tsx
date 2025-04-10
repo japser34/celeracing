@@ -9,7 +9,7 @@ const Header = () => {
 
   return (
     <header
-      className={`header ${scrollDirection === "down" ? "header--hidden" : "header--visible"}`}
+      className={`header ${scrollDirection === "down" ? "hide" : "show"}`}
     >
       <div className="flex items-center gap-2">
         <Link href="/" className="cursor-pointer">

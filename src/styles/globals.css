@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@import "./components/section.css";
+@import "./components/partner.css";
+@import "./components/header.css";
+@import "./components/footer.css";
+@import "./components/card.css";
+
+:root {
+    --bg-light: rgb(160, 160, 160);
+    --bg-dark: rgb(32, 32, 32);
+    --bg-card-light: rgb(255, 255, 255);
+    --bg-card-dark: rgb(48, 48, 48);
+    --text-light: rgb(208, 208, 208);
+    --text-dark: rgb(64, 64, 64);
+    --text-card-light: rgb(255, 255, 255);
+    --text-card-dark: rgb(16, 16, 16);
+
+    --header-height: 4rem;
+}
+
+body {
+    background: var(--bg-light);
+}

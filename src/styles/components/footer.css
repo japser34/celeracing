@@ -1,0 +1,10 @@
+@layer components {
+    .footer {
+        background-color: var(--bg-dark);
+        padding: 5rem;
+        color: var(--text-light);
+
+        display: flex;
+        align-items: center;
+    }
+}

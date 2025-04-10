@@ -1,0 +1,26 @@
+@layer components {
+    .header {
+        backdrop-filter: blur(10px);
+        background-color: color-mix(in srgb, var(--bg-light) 50%, transparent);
+        padding: 10px 20px;
+        color: var(--text-dark);
+        font-weight: bold;
+        display: flex;
+        justify-content: space-between;
+
+        align-items: center;
+        position: sticky;
+        top: 0;
+        z-index: 50;
+        height: var(--header-height);
+        transition: top 0.2s linear;
+    }
+
+    .header.hide {
+        top: calc(-1 * var(--header-height));
+    }
+
+    .header.show {
+        top: 0;
+    }
+}

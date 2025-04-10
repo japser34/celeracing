@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import styles from "../styles/Home.module.css";
+//import "../app/global.css";
+//import styles from "../styles/Home.module.css";
 
 export default function PartnerCard({
   name,
@@ -20,14 +21,14 @@ export default function PartnerCard({
       href={website}
       target="_blank"
       rel="noopener noreferrer"
-      className={styles.partnerCard}
+      className="partner-card"
     >
       <Image
         src={`/sponsors/${logo}`}
         alt={name}
         width={200}
         height={100}
-        className={styles.partnerLogo}
+        className="partner-logo"
       />
     </Link>
   );
