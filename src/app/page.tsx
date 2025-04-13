@@ -19,7 +19,7 @@ export default function Home() {
       </div>
 
       <section className="start-text">
-        <h1>Xelereesing</h1>
+        <h1>Celeracing</h1>
       </section>
 
       <section className="section dark">
