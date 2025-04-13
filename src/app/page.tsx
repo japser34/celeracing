@@ -3,7 +3,9 @@ import Link from "next/link";
 import VehicleCard from "../components/VehicleCard";
 import TeamCard from "../components/TeamCard";
 import PartnerCard from "../components/PartnerCard";
-import { vehicles, team, partners } from "../data/content";
+import { vehicles } from "../data/vehicles";
+import { team } from "../data/team";
+import { partners } from "../data/partners";
 
 export default function Home() {
   return (
